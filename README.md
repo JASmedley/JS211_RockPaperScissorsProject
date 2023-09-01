@@ -1,14 +1,5 @@
-# JS211_CurrentDateTimeProject[![CircleCI](https://circleci.com/gh/AustinCodingAcademy/javascript-workbook/tree/gh-pages.svg?style=svg)](https://circleci.com/gh/AustinCodingAcademy/javascript-workbook/tree/gh-pages)
 
-![](http://en.gravatar.com/userimage/107370100/a08594145564536138dfaaf072c7b241.png)
 
-# Austin Coding Academy
-
-## JavaScript 211 Project: Rock, Paper, Scissors
-
-## Project Checklist
-
-1. Fork and Clone [Rock, Paper, Scissors Repo](https://github.com/AustinCodingAcademy/JS211_RockPaperScissorsProject.git)
 1. Ensure you have installed all dependencies/packages: `npm i`
 1. Practice running the unit tests for the program:
     * `npm test main.js`
