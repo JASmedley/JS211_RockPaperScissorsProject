@@ -53,7 +53,6 @@ function rockPaperScissors (hand1, hand2) {
     return console.log("It's a tie!")
   }
 
-}
 
 getPrompt();
 rockPaperScissors ();
