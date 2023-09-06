@@ -10,6 +10,39 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
+// the function that will be called by the unit test below
+function rockPaperScissors (hand1, hand2) {
+  if (hand1 == "rock" && hand2 == "scissors") {
+    return "Hand 1 Wins"
+  }
+  else if (hand1 == "rock" && hand2 == "rock"){
+    return "It's a tie!"
+  }
+  else if (hand1 == "rock" && hand2 == "paper"){
+    return "Hand 2 Wins"
+  }
+  else if (hand1 == "paper" && hand2 == "scissors")  {
+    return "Hand 2 Wins"
+  }
+  else if (hand1 == "paper" && hand2 == "rock") {
+    return "Hand 1 Wins"
+  }
+  else if (hand1 == "paper" && hand2 == "paper") {
+    return "It's a tie!"
+  }
+  else if (hand1 == "scissors" && hand2 == "rock")  {
+    return "Hand 2 Wins"
+  }
+  else if (hand1 == "scissors" && hand2 == "paper") {
+    return "Hand 1 Wins"
+  }
+  else if (hand1 == "scissors" && hand2 == "scissors") {
+    return "It's a tie!"
+  }
+
+}
+
+rockPaperScissors ();
 
 
 
@@ -22,37 +55,4 @@ function getPrompt() {
     });
   });
 }
-
-// the function that will be called by the unit test below
-function rockPaperScissors (hand1, hand2) {
-  if (hand1 == "rock" && hand2 == "scissors") {
-    return console.log("Hand 1 Wins")
-  }
-  else if (hand1 == "rock" && hand2 == "rock"){
-    return console.log("It's a tie!")
-  }
-  else if (hand1 == "rock" && hand2 == "paper"){
-    return console.log("Hand 2 Wins")
-  }
-  else if (hand1 == "paper" && hand2 == "scissors")  {
-    return console.log("Hand 2 Wins")
-  }
-  else if (hand1 == "paper" && hand2 == "rock") {
-    return console.log("Hand 1 Wins")
-  }
-  else if (hand1 == "paper" && hand2 == "paper") {
-    return console.log("It's a tie!")
-  }
-  else if (hand1 == "scissors" && hand2 == "rock")  {
-    return console.log("Hand 2 Wins")
-  }
-  else if (hand1 == "scissors" && hand2 == "paper") {
-    return console.log("Hand 1 Wins")
-  }
-  else if (hand1 == "scissors" && hand2 == "scissors") {
-    return console.log("It's a tie!")
-  }
-
-
 getPrompt();
-rockPaperScissors ();
