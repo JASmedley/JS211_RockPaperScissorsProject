@@ -11,38 +11,24 @@ const rl = readline.createInterface({
 });
 
 // the function that will be called by the unit test below
+
+
+
 function rockPaperScissors (hand1, hand2) {
-  if (hand1 == "rock" && hand2 == "scissors") {
-    return "Hand 1 Wins"
-  }
-  else if (hand1 == "rock" && hand2 == "rock"){
-    return "It's a tie!"
-  }
-  else if (hand1 == "rock" && hand2 == "paper"){
-    return "Hand 2 Wins"
-  }
-  else if (hand1 == "paper" && hand2 == "scissors")  {
-    return "Hand 2 Wins"
-  }
-  else if (hand1 == "paper" && hand2 == "rock") {
-    return "Hand 1 Wins"
-  }
-  else if (hand1 == "paper" && hand2 == "paper") {
-    return "It's a tie!"
-  }
-  else if (hand1 == "scissors" && hand2 == "rock")  {
-    return "Hand 2 Wins"
-  }
-  else if (hand1 == "scissors" && hand2 == "paper") {
-    return "Hand 1 Wins"
-  }
-  else if (hand1 == "scissors" && hand2 == "scissors") {
-    return "It's a tie!"
-  }
 
+let handOne1 = hand1.trim().toLowerCase();
+let handTwo2 = hand2.trim().toLowerCase();
+
+   if (handOne1 == "rock" && handTwo2 == "rock" ||handOne1 == "paper" && handTwo2 == "paper" ||handOne1 == "scissors" && handTwo2 == "scissors" ){
+    return "It's a tie!"
+  }
+  else if (handOne1 == "rock" && handTwo2 == "paper" ||handOne1 == "paper" && handTwo2 == "scissors" ||handOne1 == "scissors" && handTwo2 == "rock"){
+    return "Hand 2 Wins"
+  }
+   else if (handOne1 == "paper" && handTwo2 == "rock" || handOne1 == "rock" && handTwo2 == "scissors" || handOne1 == "scissors" && handTwo2 == "paper"){
+    return "Hand 1 Wins"
+  }
 }
-
-rockPaperScissors ();
 
 
 
